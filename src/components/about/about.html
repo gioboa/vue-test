@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="content col-md-4">
+            
+            <div>--- v-if ---</div>
+                <h1 v-if="ifToggle" ><strong>If content</strong></h1>
+                <button v-on:click="ifToggleFunc()">v-if</button> 
+            <div>--- end ---</div>
+
+            <div>--- v-show ---</div>
+                <h1 v-if="showToggle" ><strong>Show content</strong></h1>
+                <button v-on:click="showToggleFunc()">v-show</button> 
+            <div>--- end ---</div>
+
+            <div>--- v-for ---</div>
+            <li v-for="(item, index) in items">
+                {{ item.message }}
+                <button v-on:click="removeItem(index)">Remove Item</button> 
+            </li>
+            <button v-on:click="addItem()">Add Item</button> 
+            <div>--- end ---</div>
+
+            <div>--- v-filters ---</div>
+            <div>{{ 'ciao' | capitalize('nome', 'cognome') }}</div>
+            <div>--- end ---</div>
+
+        </div>
+    </div>
+</div>
