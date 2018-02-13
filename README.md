@@ -1,2 +1,2 @@
 # vue-test
-Simple vue project for test purpose
+Simple vue project for test purpose 
